@@ -1,49 +1,8 @@
-
 @font-face {
-  font-family: 'Cinzel';
-  src: url('/assets/Fonts/Cinzel-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'Vladimir';
+  src: url('/assets/Fonts/VLADIMIR.TTF');
 }
 
-@font-face {
-  font-family: 'Cinzel-Decorative';
-  src: url('/assets/Fonts/CinzelDecorative-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Anteri';
-  src: url('/assets/Fonts/AnteriSignature.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-    font-family: 'Bell';
-    src: url('/assets/Fonts/hinted-BellMT.woff2') format('woff2'),
-        url('/assets/Fonts/hinted-BellMT.woff') format('woff'),
-        url('/assets/Fonts/hinted-BellMT.ttf') format('truetype');
-    font-weight: normal;
-    font-style: oblique;
-}
-
-
-
-.font-cinzel {
-  font-family: 'Cinzel', cursive;
-}
-
-.font-cinzel-decorative {
-  font-family: 'Cinzel-Decorative', cursive;
-}
-
-.font-bell
-{
-  font-family: 'Bell', cursive;
-}
-
-.font-anteri {
-  font-family: 'Anteri', cursive;
+.font-vladimir {
+  font-family: 'Vladimir';
 }

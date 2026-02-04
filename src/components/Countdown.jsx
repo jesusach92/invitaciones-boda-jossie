@@ -2,15 +2,22 @@ import CountdownComponent from './common/CountdownComponent';
 import { useInViewAnimation } from './hooks/useInViewAnimation';
 
 export default function Countdown() {
-  const imgSnow = useInViewAnimation({}, true)
+  const animation1 = useInViewAnimation({ order: 1 }, true)
+  const animation2 = useInViewAnimation({ order: 2, stepDelay: 500 }, true)
+  const animation3 = useInViewAnimation({ order: 3, stepDelay: 500 }, true)
+  const animation4 = useInViewAnimation({ order: 4, stepDelay: 500 }, true)
+
   return (
     <section className="countdown">
       <div className='countdown-container'>
-        <div><img className='countdown-title' src="/assets/Countdown/images/title.png" alt="Title" /></div>
-        <div className=""><CountdownComponent targetDate={'2025-12-06T14:30:00'} /></div>
-        <div className='font-bell secondary-color font-md' style={{ fontWeight: 'bold' }}>Ven a celebrar con nosotros <br /> la llegada de nuestra amada hija</div>
-        <div className='font-anteri primary-color font-xl' style={{ fontWeight: 'lighter' }}>Elo y Jesus</div>
-        <img ref={imgSnow.ref} className={`opacity-0 ${imgSnow.isVisible ? 'animate-slide-down' : ''} center-decor`} src="/assets/Countdown/images/snow.png" alt="snowgirl" />
+        <img ref={animation1.ref} src="/assets/Countdown/count-down-tiitle.png" alt="" className={`opacity-0 ${animation1.isVisible ? 'animate-appers' : ''} font-vladimir font-lg countdown-title`} />
+        <img ref={animation2.ref} src="/assets/Countdown/count-down-subtitle.png" alt="" className={`opacity-0 ${animation2.isVisible ? 'animate-appers' : ''} font-vladimir font-md countdown-subtitle`} />
+        <div ref={animation3.ref} className={`opacity-0 ${animation3.isVisible ? 'animate-appers' : ''} font-vladimir font-lg component-container`} >
+          <CountdownComponent targetDate={'2026-08-22T14:30:00'} />
+        </div>
+        <div className='decor-container'>
+          <img ref={animation4.ref} src="/assets/Countdown/count-down-image.png" alt="" className={`opacity-0 ${animation4.isVisible ? 'animate-appers' : ''} countdown-image`} />
+        </div>
       </div>
     </section>
   );
