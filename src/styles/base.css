@@ -1,0 +1,53 @@
+:root {
+--highlight-color: #c4a574;
+--main-color: #000000;
+--background-color:rgb(243 232 188 / 30%);
+
+  --font-xs: clamp(0.8rem, 1.2vw, 1rem);
+  --font-lg: clamp(2rem, 3vw, 2.5rem);
+  --font-md: clamp(1.5rem, 2.5vw, 1.8rem);
+  --font-sm: clamp(1.2rem, 2vw, 1.5rem);
+  --font-sl: clamp(1rem, 1.5vw, 1.3rem);
+  --font-xl: clamp(4rem, 5vw, 5rem);
+
+}
+
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Colores */
+.main-color{
+  color: var(--main-color);
+}
+.highlight-color{
+  color: var(--highligth-color);
+}
+
+.font-xs{
+  font-size: var(--font-xs);
+}
+.font-lg{
+  font-size: var(--font-lg);
+}
+.font-md{
+  font-size: var(--font-md);
+}
+.font-sm{
+  font-size: var(--font-sm);
+}
+.font-sl{
+  font-size: var(--font-sl);
+}
+.font-xl{
+  font-size: var(--font-xl);
+}
+.main-container{
+  max-width: 430px;     /* ancho típico de celular */
+  width: 100%;
+  margin: 0 auto;       /* centra y crea espacio a los lados */
+  background: #fff; 
+}

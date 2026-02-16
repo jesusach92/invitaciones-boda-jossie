@@ -1,0 +1,43 @@
+/*--------------------------------
+Dresscode
+--------------------------------*/
+.dresscode {
+  width: 100%;
+  min-height: 80vh;
+  background: url('/assets/Dresscode/images/background.png');
+  background-size: cover;
+  background-position: right;
+}
+.dresscode-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+}
+.title-element_1{
+  align-self: flex-start;
+  width: 150px;
+}
+.title-element_2{
+  align-self: flex-end;
+  width: 100px;
+}
+
+.decor-section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.decor-section > img{
+  width: 150px;
+}

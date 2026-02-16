@@ -1,0 +1,95 @@
+/*--------------------------------
+Countdown
+--------------------------------*/
+.countdown {
+ background-color: var(--background-color);
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+ }
+
+.countdown-container {
+  color: var(--red-color);
+  font-size: var(--font-md);
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding-top: 20%;
+  background-image: url('/assets/Countdown/count-down-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  border-radius: 55px;
+  border: 1px solid #bfbdbe;
+  position: relative;
+}
+.component-container{
+  width: 80%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.countdown-title{
+  width: 15rem;
+  align-self: center;
+}
+.decor-container{
+  width: 100%;
+  position: relative;
+  top: -10%;
+}
+.countdown-image{
+  max-width: 100%;
+  top: 40%;
+}
+.countdown-subtitle {
+  width: 10rem;
+  align-self: center;
+}
+
+.countdown-component-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+
+.countdown-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-value {
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.countdown-value.highlight {
+  color: var(--secondary-color);
+}
+
+.countdown-label {
+  color: var(--secondary-color);
+  margin-top: 0.25rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.countdown-separator {
+
+  color: var(--primary-color);
+  line-height: 1;
+  padding: 0 0.1rem;
+  align-self: baseline;
+}

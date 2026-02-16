@@ -27,7 +27,6 @@ export default function Hero({ visible = false }) {
           muted
           playsInline
           src="/assets/Hero/Wedding of.mp4"
-          style={{ borderRadius: '40px', border: '1px solid #bfbdbe' }}
         />
 
       </div>

@@ -1,0 +1,56 @@
+/*Copyright*/
+
+.copyright {
+  width: 100%;
+  background-color: tranparent; /* no intrusivo */
+  color: #555;
+  font-size: 0.9rem;
+  padding: 2px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.copyright-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* para móviles */
+  max-width: 1000px;
+  width: 90%;
+  gap: 3px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

@@ -1,15 +1,24 @@
 import React from 'react'
-import { useInViewAnimation } from './hooks/useInViewAnimation'
+// import { useInViewAnimation } from './hooks/useInViewAnimation'
 
 const Dresscode = () => {
-  const imgMittens = useInViewAnimation({}, true)
+
+
   return (
     <section className='dresscode'>
-      <div className="elements-container">
-        <div className='font-cinzel-decorative secondary-color' style={{ fontSize: '3rem', fontWeight: '700' }}>Codigo de Vestimenta</div>
-        <div className='font-bell primary-color font-lg'>Ropa cómoda y alguna <br />prenda navideña</div>
-        <img ref={imgMittens.ref} src="/assets/Dresscode/images/guantes.png" alt="mittens" className={`opacity-0 ${imgMittens.isVisible ? 'animate-slide-down' : ''} dresscode-image-decor`} />
-        <img src="/assets/Dresscode/images/lazo.png" alt="lazo" className='dresscode-decor' />
+      <div className="dresscode-container">
+        <div className='title-section'>
+          <img src="/assets/Dresscode/title_1.png" alt="" className="title-element_1" />
+          <img src="/assets/Dresscode/title_2.png" alt="" className="title-element_2" />
+        </div>
+        <div className='description-section'>
+          <img src="/assets/Dresscode/subtitle.png" alt="" className="dresscode-decription" />
+          <img src="/assets/Dresscode/description.png" alt="" className="dresscode-decription" />
+        </div>
+        <div className='decor-section'>
+          <img src="/assets/Dresscode/gentleman.png" alt="" className="dresscode-decors" />
+          <img src="/assets/Dresscode/lady.png" alt="" className="dresscode-decors" />
+        </div>
       </div>
     </section>
   )

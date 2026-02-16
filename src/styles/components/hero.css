@@ -1,0 +1,48 @@
+/*--------------------------------
+Hero Section
+--------------------------------*/
+.hero {
+  background-color: var(--background-color);
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.hero-container{
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background-image: url('/assets/Envelope/envelope.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      border-radius: 40px;
+    border: 1px solid rgb(191, 189, 190);
+}
+.video-background{
+  height: 100vh;
+  width: 100%;
+}
+
+
+.hero-title {
+  font-size: var(--font-lg);
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.hero-main-text
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-poster{
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}

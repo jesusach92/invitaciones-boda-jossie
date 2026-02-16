@@ -1,0 +1,69 @@
+
+/*--------------------------------
+Envelop
+--------------------------------*/
+
+/* ... tus otras clases ... */
+
+.envelope-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105vh;
+  cursor: pointer;
+  z-index: 9999;
+  transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
+  background-color: var(--background-color);
+  background-image: url('/assets/Envelope/envelope.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ESTA ES LA CLASE QUE DEBES CAMBIAR */
+.envelope-overlay.opened {
+  /* En lugar de transform: translateY(-100%); hacemos esto: */
+  
+  opacity: 0;           /* Se vuelve transparente */
+  visibility: hidden;   /* Se oculta para el navegador al terminar la transición */
+  pointer-events: none; /* CRUCIAL: Evita que el usuario de click fantasma cuando ya no se ve */
+}
+.envelope-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+
+}
+
+.family-name {
+  color: var(--highlight-color);
+  font-family: "Times New Roman", serif;
+  font-size: 3rem;
+}
+.postcard{
+  width: 70%;
+}
+.text-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.text-envelope{
+  width: 70%;
+}
+
+.clickeable {
+  color: var(--highlight-color);
+  font-weight: 700;
+  animation: pop 1.5s ease infinite;
+}

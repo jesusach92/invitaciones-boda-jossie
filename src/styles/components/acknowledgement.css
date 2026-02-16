@@ -1,0 +1,43 @@
+/*Acknowledgement*/
+.acknowledgement{
+  background-image: url('/assets/Acknowledgement/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.acknowledgement-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden ;
+}
+
+.ack-image-decor{
+  width: 300px;
+  align-self: flex-end;
+}
+.ack-decor{
+  position: absolute;
+  width: 50px;
+}
+.acknowledgement-container > .left{
+  width: 80px;
+  animation: fallAndSpin 8s 2s linear infinite;
+  top: 0;
+  left: 20px;
+}
+.acknowledgement-container > .right{
+    width: 50px;
+  animation: fallAndSpin 8s 4s linear infinite;
+  top: 0;
+  right: 20px;
+}

@@ -1,0 +1,76 @@
+/*--------------------------------
+GiftTable
+--------------------------------*/
+.gift-table{
+  background:url('/assets/GiftTable/images/background.png');
+  background-size: cover;
+  background-position: center;
+
+  min-height: 45vh;
+  position: relative;
+
+}
+.top-right-decor, .bottom-left-decor, .bottom-right-decor, .top-left-decor{
+  position: absolute;
+  pointer-events: none;
+}
+
+.top-right-decor{
+  top: 0px;
+  right: 0px;
+}
+
+.bottom-left-decor{
+  bottom: 0px;
+  left: 0px;
+  transform: scaleX(-1);
+}
+
+
+.bottom-right-decor{
+  bottom: 0px;
+  right: 2%;
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.decor-image{
+  width: 6rem;
+}
+.decor-elements{
+  width: 9rem;
+}
+
+.elements-container{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+.decor-link{
+  width: 200px;
+  cursor: pointer;
+}
+.elements-container > .image-decor{
+  width: 100px;
+  position: absolute;
+ 
+}
+.elements-container > .left{
+  top: 0;
+  left: 20px;
+  width: 50px;
+   animation: fallAndSpin 8s 1s linear infinite;
+}
+.elements-container > .right{
+  top: -10px;
+  right: 20px;
+  width: 50px;
+   animation: fallAndSpin 8s 3s linear infinite;
+}
+.gift-decor{
+  width: 200px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}

@@ -1,0 +1,45 @@
+/* === CLASES REUTILIZABLES === */
+
+.animate-slide-up {
+  animation: slideUp 1.6s 1s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 1.6s 1s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 1.6s 1s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 1.6s 1s ease-out forwards;
+}
+.animate-appers{
+  animation: appers 2s ease-in forwards;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  will-change: opacity, transform; /* mejora rendimiento */
+}
+
+
+
+.primary-color{
+  color: var(--primary-color);
+}
+.secondary-color{
+  color: var(--secondary-color);
+}
+
+section {
+  width: 100%;
+  padding: 1rem 1rem 0rem 1rem;
+  
+}

@@ -12,6 +12,8 @@ import Container from './components/common/Container'
 import MusicPlayer from './components/common/MusicPlayer'
 import './styles/normalize.css'
 import './styles/styles.css'
+import Agenda from './components/Agenda'
+import Suggestions from './components/Suggestions'
 
 function App() {
   const [musicStarted, setMusicStarted] = useState(false);
@@ -23,10 +25,11 @@ function App() {
       <Hero visible={opened} />
       <Countdown isVisible={opened} />
       <Where />
-      <GiftTable />
+      <Agenda />
       <Dresscode />
+      <GiftTable />
+      <Suggestions />
       <Confirmation />
-      <Acknowledgement />
       <Copyright />
     </Container>
   )

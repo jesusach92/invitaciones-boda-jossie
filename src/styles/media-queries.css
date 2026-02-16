@@ -1,0 +1,40 @@
+/*--------------------------------
+Media Queries
+--------------------------------*/
+@media (min-width: 768px) {
+  .hero-title {
+    top: -2rem;
+    font-size: 1.5rem;
+  }
+
+  .address-cards-container {
+    max-width: 50rem;
+  }
+
+  .confirmation-frame-container {
+    padding: 2rem 1rem;
+  }
+  .family-name{
+    font-size: 4rem;
+    top: 25%;
+  }
+
+
+}
+
+@media (min-width: 480px) {
+
+  .hero {
+    top: 3rem;
+  }
+
+  .hero-date {
+    font-size: 0.8rem;
+  }
+
+  .agenda .header .image {
+    width: 60px;
+  }
+}
+
+

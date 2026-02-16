@@ -1,0 +1,38 @@
+/*--------------------------------
+Music Section
+--------------------------------*/
+.floating-music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000; /* Siempre encima */
+}
+
+.music-player-container{
+  background-color: var(--background-color);
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--red-color);
+  position: fixed;
+
+  bottom: 20px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000; /* Siempre encima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-logo {
+  width: 100%;
+  transition: transform 0.3s linear;
+}
+
+.rotating .music-logo {
+  animation: spin 4s linear infinite;
+}

@@ -1,0 +1,121 @@
+/*--------------------------------
+Welcome
+--------------------------------*/
+.welcome {
+  background: url('/assets/Welcome/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+  height: 90vh;
+  position: relative;
+
+}
+.welcome > .image-decor{
+  position: absolute;
+  width: 150px;
+}
+.bottom-right{
+  bottom: 0px;
+  right: 0px;
+  width: 200px !important;
+  z-index: 1;
+}
+.top-center{
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px !important;
+  z-index: 1;
+  animation: rotate 5s linear infinite;
+}
+
+.top-left{
+  top: 0px;
+  left: 0px;
+  width: 70px !important;
+  z-index: 1;
+  animation: fallAndSpin 8s linear infinite;
+}
+.down{
+  top: 25% !important;
+  animation: appear 3s ease-in-out infinite;
+}
+
+.top-right{
+  top: 0;
+  right: 0;
+  width: 60px !important;
+  z-index: 1;
+  animation: appear 4s ease-in-out infinite;
+}
+
+.center-right{
+  top: 25%;
+  right: 5%;
+  width: 70px !important;
+  z-index: 1;
+  animation: fallAndSpin 8s linear infinite;
+}
+
+.center-center{
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px !important;
+  z-index: 1;
+  animation: fallAndSpin 8s linear infinite;
+}
+.up{
+  bottom: 40% !important;
+  width: 40px !important;
+  animation: rotate 6s linear infinite;
+}
+
+.bottom-left{
+  top: 0%;
+  left: 25%;
+  width: 80px !important;
+  z-index: 1;
+  animation: fallAndSpin 8s 2s linear infinite;
+  
+}
+.center-left{
+  bottom: 40%;
+  left: 10%;
+  width: 40px !important;
+  z-index: 1;
+  animation: rotate 4s linear infinite;
+}
+
+.welcome-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.welcome-message{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-date-container {
+width: 100%;
+  display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.borders{
+  border-top: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  padding: 5px;
+}
