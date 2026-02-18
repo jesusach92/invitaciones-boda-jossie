@@ -12,6 +12,7 @@ export default function Countdown() {
       <div className='countdown-container'>
         <img ref={animation1.ref} src="/assets/Countdown/count-down-tiitle.png" alt="" className={`opacity-0 ${animation1.isVisible ? 'animate-appers' : ''} font-vladimir font-lg countdown-title`} />
         <img ref={animation2.ref} src="/assets/Countdown/count-down-subtitle.png" alt="" className={`opacity-0 ${animation2.isVisible ? 'animate-appers' : ''} font-vladimir font-md countdown-subtitle`} />
+        <br />
         <div ref={animation3.ref} className={`opacity-0 ${animation3.isVisible ? 'animate-appers' : ''} font-vladimir font-lg component-container`} >
           <CountdownComponent targetDate={'2026-08-22T14:30:00'} />
         </div>

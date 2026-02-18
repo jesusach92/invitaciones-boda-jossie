@@ -36,29 +36,29 @@ export default function CountdownComponent({ targetDate }) {
   return (
     <div className="countdown-component-container">
       <div className="countdown-column">
-        <div className="countdown-value font-bell primary-color font-lg">{timeLeft.days}</div>
-        <div className="countdown-label font-bell primary-color font-xs">DÍAS</div>
+        <div className="countdown-value font-source-serif highlight-color font-lg">{timeLeft.days}</div>
+        <div className="countdown-label font-source-serif primary-color font-xs">DAYS</div>
       </div>
 
-      <div className="countdown-separator font-bell primary-color font-lg">:</div>
+      <div className="countdown-separator font-source-serif highlight-color font-lg">:</div>
 
       <div className="countdown-column">
-        <div className="countdown-value font-bell primary-color font-lg">{timeLeft.hours}</div>
-        <div className="countdown-label font-bell primary-color font-xs">HORAS</div>
+        <div className="countdown-value font-source-serif highlight-color font-lg">{timeLeft.hours}</div>
+        <div className="countdown-label font-source-serif primary-color font-xs">HOURS</div>
       </div>
 
-      <div className="countdown-separator font-bell primary-color font-lg">:</div>
+      <div className="countdown-separator font-source-serif highlight-color font-lg">:</div>
 
       <div className="countdown-column">
-        <div className="countdown-value font-bell primary-color font-lg">{timeLeft.minutes}</div>
-        <div className="countdown-label font-bell primary-color font-xs">MINUTOS</div>
+        <div className="countdown-value font-source-serif highlight-color font-lg">{timeLeft.minutes}</div>
+        <div className="countdown-label font-source-serif primary-color font-xs">MINUTES</div>
       </div>
 
-      <div className="countdown-separator font-bell primary-color font-lg">:</div>
+      <div className="countdown-separator font-source-serif highlight-color font-lg">:</div>
 
       <div className="countdown-column">
-        <div className="countdown-value highlight font-bell primary-color font-lg">{timeLeft.seconds}</div>
-        <div className="countdown-label font-bell primary-color font-xs">SEGUNDOS</div>
+        <div className="countdown-value highlight font-source-serif highlight-color font-lg">{timeLeft.seconds}</div>
+        <div className="countdown-label font-source-serif primary-color font-xs">SECONDS</div>
       </div>
     </div>
   );

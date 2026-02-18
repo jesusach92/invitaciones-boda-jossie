@@ -3,6 +3,7 @@
 --main-color: #000000;
 --background-color:rgb(243 232 188 / 30%);
 
+
   --font-xs: clamp(0.8rem, 1.2vw, 1rem);
   --font-lg: clamp(2rem, 3vw, 2.5rem);
   --font-md: clamp(1.5rem, 2.5vw, 1.8rem);
@@ -24,7 +25,7 @@
   color: var(--main-color);
 }
 .highlight-color{
-  color: var(--highligth-color);
+  color: var(--highlight-color);
 }
 
 .font-xs{

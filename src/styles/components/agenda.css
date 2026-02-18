@@ -171,7 +171,7 @@ Agenda
 
 /* Título */
 .timeline-title {
-  width: 100%;
+  width: 80%;
   margin-bottom: 12px;
 }
 
@@ -190,18 +190,20 @@ Agenda
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: -200px;
   left: 50%;
-  width: 3px;
-  background: linear-gradient(#d9b46c, #d9b46c);
+  width: 130%;
+  background-image: url('/assets/Agenda/separator.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transform: translateX(-50%);
-  border-radius: 2px;
 }
 
 /* Eventos */
 .event {
   width: 100%;
-  max-width: 130px;
+  max-width: 150px;
 }
 
 /* Alineaciones */
