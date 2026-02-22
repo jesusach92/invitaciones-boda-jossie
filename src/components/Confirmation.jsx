@@ -1,5 +1,6 @@
 
 import { useGuestHook } from './hooks/useGuestHook';
+import { useInViewAnimation } from './hooks/useInViewAnimation';
 
 
 const FormRSVP = (family) => {
@@ -21,23 +22,28 @@ const FormRSVP = (family) => {
 
 const Confirmation = () => {
   const family = useGuestHook();
-
-
-
-
+  const animations = [
+    useInViewAnimation(
+      { order: 1, stepDelay: 0 }
+    ),
+    useInViewAnimation({ order: 2, stepDelay: 300 }),
+    useInViewAnimation({ order: 3, stepDelay: 300 }),
+    useInViewAnimation({ order: 4, stepDelay: 300 }),
+  ];
 
 
   return (
     <section className="confirmation font-indie-flower" >
       <div className="confirmation-container">
-        <div>
-          <img src="/assets/Confirmation/title.png" alt="" />
+        <div className='confirmation-title'>
+          <img ref={animations[0].ref} src="/assets/Confirmation/title.png" alt="" className={`opacity-0 ${animations[0].isVisible ? 'animate-appers' : ''} confirmation-title`} />
         </div>
-        <div>
+        <div ref={animations[1].ref} className={`opacity-0 ${animations[1].isVisible ? 'animate-appers' : ''} confirmation-form`}>
           <FormRSVP family={family} />
         </div>
-        <div>
-        </div>  <img src="/assets/Confirmation/decor.png" alt="" className="decor" />
+        <div className='confirmation-decor'>
+          <img ref={animations[2].ref} src="/assets/Confirmation/decor.png" alt="" className={`opacity-0 ${animations[2].isVisible ? 'animate-appers' : ''} confirmation-decor`} />
+        </div>
       </div >
 
     </section >

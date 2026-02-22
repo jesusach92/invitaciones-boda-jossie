@@ -15,12 +15,12 @@ const Suggestions = () => {
                 <div className="title-container">
                     <img ref={animations[0].ref} src="/assets/Suggestions/title.png" alt="" className={`opacity-0 ${animations[0].isVisible ? 'animate-appers' : ''} title`} />
                 </div>
-                <div className="description-container">
+                <div className="suggestions-description-container">
                     <img ref={animations[1].ref} src="/assets/Suggestions/description.png" alt="" className={`opacity-0 ${animations[1].isVisible ? 'animate-appers' : ''} description`} />
                 </div>
-                <div className="decor-container">
-                    <img ref={animations[2].ref} src="/assets/Suggestions/accomodation.png" alt="" className={`opacity-0 ${animations[2].isVisible ? 'animate-appers' : ''} decor-image`} />
-                    <img ref={animations[3].ref} src="/assets/Suggestions/places.png" alt="" className={`opacity-0 ${animations[3].isVisible ? 'animate-appers' : ''} decor-image`} />
+                <div className="suggestions-decor-container">
+                    <img ref={animations[2].ref} src="/assets/Suggestions/accomodation.png" alt="" className={`opacity-0 ${animations[2].isVisible ? 'animate-appers' : ''} suggestions-decor-image`} />
+                    <img ref={animations[3].ref} src="/assets/Suggestions/places.png" alt="" className={`opacity-0 ${animations[3].isVisible ? 'animate-appers' : ''} suggestions-decor-image`} />
                 </div>
             </div>
         </section>
