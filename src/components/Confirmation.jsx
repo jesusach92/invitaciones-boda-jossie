@@ -1,8 +1,4 @@
 
-import { useState } from 'react';
-import '../styles/styles.css';
-
-import ConfirmationModal from './common/ConfirmationModal';
 import { useGuestHook } from './hooks/useGuestHook';
 
 
@@ -32,7 +28,7 @@ const Confirmation = () => {
 
 
   return (
-    <section className="confirmation-with-message font-indie-flower" >
+    <section className="confirmation font-indie-flower" >
       <div className="confirmation-container">
         <div>
           <img src="/assets/Confirmation/title.png" alt="" />
@@ -41,9 +37,9 @@ const Confirmation = () => {
           <FormRSVP family={family} />
         </div>
         <div>
-        </div>
+        </div>  <img src="/assets/Confirmation/decor.png" alt="" className="decor" />
       </div >
-      <img src="/assets/Confirmation/decor.png" alt="" />
+
     </section >
   )
 }

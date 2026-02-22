@@ -10,7 +10,8 @@ Envelop
   top: 0;
   left: 0;
   width: 100%;
-  height: 105vh;
+  height: 100vh;
+  overflow: hidden;
   cursor: pointer;
   z-index: 9999;
   transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;

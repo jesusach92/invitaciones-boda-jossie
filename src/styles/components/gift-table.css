@@ -5,39 +5,10 @@ GiftTable
   background:url('/assets/GiftTable/images/background.png');
   background-size: cover;
   background-position: center;
-
   min-height: 45vh;
   position: relative;
-
-}
-.top-right-decor, .bottom-left-decor, .bottom-right-decor, .top-left-decor{
-  position: absolute;
-  pointer-events: none;
-}
-
-.top-right-decor{
-  top: 0px;
-  right: 0px;
-}
-
-.bottom-left-decor{
-  bottom: 0px;
-  left: 0px;
-  transform: scaleX(-1);
-}
-
-
-.bottom-right-decor{
-  bottom: 0px;
-  right: 2%;
-  transform: scaleX(-1) scaleY(-1);
-}
-
-.decor-image{
-  width: 6rem;
-}
-.decor-elements{
-  width: 9rem;
+  max-width: 430px;
+  background-color: var(--background-color);
 }
 
 .elements-container{
@@ -47,30 +18,50 @@ GiftTable
   align-items: center;
   gap: 1.5rem;
   position: relative;
+  border-radius: 40px;
+  border: 1px solid rgb(191, 189, 190);
+  background: url('/assets/GiftTable/background.png');
+  background-size: 120%;
+  background-position: center;
 }
-.decor-link{
-  width: 200px;
-  cursor: pointer;
+
+.title-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
 }
-.elements-container > .image-decor{
-  width: 100px;
-  position: absolute;
- 
+
+.title-image{
+  width: 60%;
 }
-.elements-container > .left{
-  top: 0;
-  left: 20px;
-  width: 50px;
-   animation: fallAndSpin 8s 1s linear infinite;
+.description-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.elements-container > .right{
-  top: -10px;
-  right: 20px;
-  width: 50px;
-   animation: fallAndSpin 8s 3s linear infinite;
+.description-image{
+  width: 80%;
 }
-.gift-decor{
-  width: 200px;
-  justify-self: flex-end;
-  align-self: flex-end;
+.decor-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+.img-decor_1{
+  width:80%;
+}
+.img-decor_2{
+  width: 80%;
+}
+.decor-image{
+  width: 100%;
+  position: sticky;
+  top: 50%;
 }

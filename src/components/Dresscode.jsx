@@ -1,23 +1,31 @@
 import React from 'react'
-// import { useInViewAnimation } from './hooks/useInViewAnimation'
+import { useInViewAnimation } from './hooks/useInViewAnimation'
 
 const Dresscode = () => {
 
+  const animations = [
+    useInViewAnimation({ order: 1, stepDelay: 0 }, true),
+    useInViewAnimation({ order: 2, stepDelay: 500 }, true),
+    useInViewAnimation({ order: 3, stepDelay: 500 }, true),
+    useInViewAnimation({ order: 4, stepDelay: 500 }, true),
+    useInViewAnimation({ order: 5, stepDelay: 500 }, true),
+    useInViewAnimation({ order: 6, stepDelay: 500 }, true),
+  ]
 
   return (
     <section className='dresscode'>
       <div className="dresscode-container">
         <div className='title-section'>
-          <img src="/assets/Dresscode/title_1.png" alt="" className="title-element_1" />
-          <img src="/assets/Dresscode/title_2.png" alt="" className="title-element_2" />
+          <img ref={animations[0].ref} src="/assets/Dresscode/title_1.png" alt="" className={`opacity-0 ${animations[0].isVisible ? 'animate-appers' : ''} title-element_1`} />
+          <img ref={animations[1].ref} src="/assets/Dresscode/title_2.png" alt="" className={`opacity-0 ${animations[1].isVisible ? 'animate-appers' : ''} title-element_2`} />
         </div>
         <div className='description-section'>
-          <img src="/assets/Dresscode/subtitle.png" alt="" className="dresscode-decription" />
-          <img src="/assets/Dresscode/description.png" alt="" className="dresscode-decription" />
+          <img ref={animations[2].ref} src="/assets/Dresscode/subtitle.png" alt="" className="dresscode-description" />
+          <img ref={animations[3].ref} src="/assets/Dresscode/description.png" alt="" className="dresscode-description-2" />
         </div>
         <div className='decor-section'>
-          <img src="/assets/Dresscode/gentleman.png" alt="" className="dresscode-decors" />
-          <img src="/assets/Dresscode/lady.png" alt="" className="dresscode-decors" />
+          <img ref={animations[4].ref} src="/assets/Dresscode/gentleman.png" alt="" className="dresscode-decors" />
+          <img ref={animations[5].ref} src="/assets/Dresscode/lady.png" alt="" className="dresscode-decors lady" />
         </div>
       </div>
     </section>
