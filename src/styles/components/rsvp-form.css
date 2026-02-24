@@ -1,0 +1,79 @@
+/* ===============================
+   RSVP FORM (scoped + JSX-safe)
+================================ */
+
+.rsvp-container{
+  padding-top: 1rem;
+  width: 100%;
+}
+
+#rsvp-form .rsvp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label como fila */
+#rsvp-form .rsvp-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 28px; /* espacio para el círculo */
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Ocultamos el checkbox real */
+#rsvp-form .rsvp-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Círculo negro */
+#rsvp-form .rsvp-option::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+/* Círculo blanco interno (invisible) */
+#rsvp-form .rsvp-option::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Cuando el checkbox está marcado */
+#rsvp-form .rsvp-option:has(input:checked)::after {
+  opacity: 1;
+}
+
+/* Estado deshabilitado */
+#rsvp-form .rsvp-option:has(input:disabled) {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.rsvp-submit-button{
+  width: 50%;
+  max-width: 300px;
+}
+.form-button{
+  width: 80%;
+}
+
+.rsvp-not-attending{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

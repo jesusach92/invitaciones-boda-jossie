@@ -3,9 +3,9 @@ import { useInViewAnimation } from './hooks/useInViewAnimation';
 
 export default function Countdown() {
   const animation1 = useInViewAnimation({ order: 1 }, true)
-  const animation2 = useInViewAnimation({ order: 2, stepDelay: 500 }, true)
-  const animation3 = useInViewAnimation({ order: 3, stepDelay: 500 }, true)
-  const animation4 = useInViewAnimation({ order: 4, stepDelay: 500 }, true)
+  const animation2 = useInViewAnimation({ order: 2, stepDelay: 300 }, true)
+  const animation3 = useInViewAnimation({ order: 3, stepDelay: 300 }, true)
+  const animation4 = useInViewAnimation({ order: 4, stepDelay: 300 }, true)
 
   return (
     <section className="countdown">

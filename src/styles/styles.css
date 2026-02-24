@@ -13,6 +13,10 @@
 @import url('./components/music-player.css');
 @import url('./components/suggestions.css');
 @import url('./components/modal.css');
+@import url('./components/rsvp-form.css');
+@import url('./components/accomodations.css');
+@import url('./components/places.css');
+@import url('./components/slider.css');
 @import url('./buttons.css');
 @import url('./media-queries.css');
 @import url('./utils.css');

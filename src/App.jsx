@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Acknowledgement from './components/Acknowledgement'
+
 import Confirmation from './components/Confirmation'
 import Copyright from './components/Copyright'
 import Countdown from './components/Countdown'

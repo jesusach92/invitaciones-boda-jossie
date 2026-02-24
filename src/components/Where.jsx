@@ -4,11 +4,11 @@ import { useInViewAnimation } from './hooks/useInViewAnimation'
 const Where = () => {
      const animations = [
           useInViewAnimation({ order: 1, stepDelay: 0 }, true),
-          useInViewAnimation({ order: 2, stepDelay: 400 }, true),
-          useInViewAnimation({ order: 3, stepDelay: 400 }, true),
-          useInViewAnimation({ order: 4, stepDelay: 400 }, true),
-          useInViewAnimation({ order: 5, stepDelay: 400 }, true),
-          useInViewAnimation({ order: 6, stepDelay: 400 }, true),
+          useInViewAnimation({ order: 2, stepDelay: 300 }, true),
+          useInViewAnimation({ order: 3, stepDelay: 300 }, true),
+          useInViewAnimation({ order: 4, stepDelay: 300 }, true),
+          useInViewAnimation({ order: 5, stepDelay: 300 }, true),
+          useInViewAnimation({ order: 6, stepDelay: 300 }, true),
      ]
      return (
           <section className='where'>

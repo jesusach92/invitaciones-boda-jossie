@@ -35,7 +35,7 @@ export default function EnvelopeOverlay({ onStartMusic, opened, setOpened }) {
         >
             <div className="envelope-container">
                 <p ref={animation1.ref} className={`opacity-0 ${animation1.isVisible ? 'animate-appers' : ''} font-vladimir font-lg family-name`}>
-                    {family ? `${family.family.toUpperCase()}` : "Perez Herrera Family"}
+                    {family ? `${family.family}` : "Perez Herrera Family"}
                 </p>
                 <img ref={animation2.ref} src="/assets/Envelope/postcard.png" alt="" className={`opacity-0 ${animation2.isVisible ? 'animate-appers' : ''} postcard clickeable`} />
                 <div className="text-container">

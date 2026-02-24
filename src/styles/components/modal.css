@@ -16,18 +16,15 @@ Modal Styles
 }
 
 .modal-content {
-  background: url('/assets/Confirmation/images/background.png');
-  background-size: cover;
-  background-position: 20%;
-  border-radius: 12px;
-  padding: 2rem;
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   position: relative;
   text-align: left;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  align-items: center;
+  padding: 1rem 0rem;
 }
 
 .form-group {
