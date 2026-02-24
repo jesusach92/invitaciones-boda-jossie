@@ -40,9 +40,7 @@ function RsvpForm({ data }) {
                 adults: notAttending ? '' : `${selectedAdults.toString()}`,
                 kids: notAttending ? '' : selectedKids.toString()
             });
-
             const url = `https://script.google.com/macros/s/AKfycbzo04l7CPUrcvU2ZrehkFLTr632KXXV3qICVXgQnnMnimHYPugBVzHaox9zxdPTZhFU-w/exec?${params.toString()}`;
-            console.log(url);
             await fetch(url, { method: "GET" });
 
 
