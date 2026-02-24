@@ -24,7 +24,11 @@
     left: 0%;
     transform: translate(50%, 50%);
 }
-
+.slider-controls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .slider-controls button {
   background: none;
   border: none;

@@ -31,18 +31,25 @@ function RsvpForm({ data }) {
         setSelectedKids([]);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        try {
+            const params = new URLSearchParams({
+                code: data.code,
+                attended: !notAttending,
+                adults: notAttending ? '' : `${selectedAdults.toString()}`,
+                kids: notAttending ? '' : selectedKids.toString()
+            });
 
-        const payload = {
-            familyId: data.id,
-            code: data.code,
-            attending: !notAttending,
-            adults: notAttending ? [] : selectedAdults,
-            kids: notAttending ? [] : selectedKids
-        };
+            const url = `https://script.google.com/macros/s/AKfycbzo04l7CPUrcvU2ZrehkFLTr632KXXV3qICVXgQnnMnimHYPugBVzHaox9zxdPTZhFU-w/exec?${params.toString()}`;
+            console.log(url);
+            await fetch(url, { method: "GET" });
 
-        console.log(payload);
+
+        } catch (err) {
+            console.error("Error al enviar:", err);
+            alert("Hubo un error al enviar la confirmación.");
+        }
     };
 
     return (
