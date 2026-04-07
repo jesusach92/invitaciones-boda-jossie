@@ -1,4 +1,3 @@
-
 /*--------------------------------
 Envelop
 --------------------------------*/
@@ -30,12 +29,16 @@ Envelop
 /* ESTA ES LA CLASE QUE DEBES CAMBIAR */
 .envelope-overlay.opened {
   /* En lugar de transform: translateY(-100%); hacemos esto: */
-  
-  opacity: 0;           /* Se vuelve transparente */
-  visibility: hidden;   /* Se oculta para el navegador al terminar la transición */
-  pointer-events: none; /* CRUCIAL: Evita que el usuario de click fantasma cuando ya no se ve */
+
+  opacity: 0;
+  /* Se vuelve transparente */
+  visibility: hidden;
+  /* Se oculta para el navegador al terminar la transición */
+  pointer-events: none;
+  /* CRUCIAL: Evita que el usuario de click fantasma cuando ya no se ve */
 }
-.envelope-container{
+
+.envelope-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -49,17 +52,20 @@ Envelop
   color: var(--highlight-color);
   font-family: "Times New Roman", serif;
   font-size: 3rem;
-}
-.postcard{
-  width: 70%;
-}
-.text-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+  text-align: center;
 }
 
-.text-envelope{
+.postcard {
+  width: 70%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-envelope {
   width: 70%;
 }
 

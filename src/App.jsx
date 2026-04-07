@@ -18,6 +18,7 @@ import Suggestions from './components/Suggestions'
 function App() {
   const [musicStarted, setMusicStarted] = useState(false);
   const [opened, setOpened] = useState(false);
+
   return (
     <Container>
       <EnvelopeOverlay onStartMusic={() => setMusicStarted(true)} opened={opened} setOpened={setOpened} />
